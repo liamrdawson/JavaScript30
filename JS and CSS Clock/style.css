@@ -43,4 +43,7 @@ html {
     background: black;
     position: absolute;
     top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all .05s cubic-bezier(0.23, 0.51, 0.38, 1.78);
   }
