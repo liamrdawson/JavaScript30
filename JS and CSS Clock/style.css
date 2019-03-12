@@ -47,3 +47,7 @@ html {
     transform: rotate(90deg);
     transition: all .05s cubic-bezier(0.23, 0.51, 0.38, 1.78);
   }
+
+.fast {
+    transition: all 0s;
+} 
