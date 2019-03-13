@@ -49,11 +49,15 @@ const sortedYears = inventors.sort(function(a, b) {
     const nextInventor = b.passed -b.year;
     return lastInventor > nextInventor ? -1 : 1;
 });
-
-console.log(sortedYears);
+console.table(sortedYears);
 
 // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
 // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
+const category = document.querySelector('.mw-category');
+const links = Array.from(category.querySelectorAll('a'));
+const de = links
+                .map(link => link.textContent)
+                .filter(streetName => streetName.includes('de'));
 
 
 // 7. sort Exercise
